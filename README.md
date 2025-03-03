@@ -1,66 +1,22 @@
-## Foundry
+# Solidity Project
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This is a Solidity-based smart contract project(Raffle- Smart Automated Lottery). It includes scripts for compilation, deployment, and testing.
 
-Foundry consists of:
+## Prerequisites
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+Ensure you have the following installed:
 
-## Documentation
+- [Hardhat](https://hardhat.org/) or [Foundry](https://book.getfoundry.sh/)
+- [Git](https://git-scm.com/)
+- [MetaMask](https://metamask.io/) (for interacting with deployed contracts)
 
-https://book.getfoundry.sh/
+### Installation
 
-## Usage
+Clone the repository and install dependencies:
 
-### Build
-
-```shell
-$ forge build
+```sh
+git clone https://github.com/Aasifusmani1552/foundry-smart-lottery-contract
 ```
 
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+### NOTE
+Note: Deploying on Sepolia Testnet may fail without a Sub ID. Create one manually and try adding the ID in HelperConfig.
